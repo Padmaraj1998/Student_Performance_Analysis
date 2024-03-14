@@ -2,3 +2,9 @@ Day 1:
        1) Setup new environmment   - conda create -p venv python==3.8 -y
        2)setup.py
        3)requirements.txt          - pip install -r requirements.txt
+
+Day 2:
+       1) Exception and logger
+
+Day 3:
+       1) project topic understanding about EDA and modeltraining samples in the file

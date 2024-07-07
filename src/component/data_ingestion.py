@@ -10,9 +10,10 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionConfig:
-    train_data_path: str=os.path.join('artifacts','train.csv')
-    test_data_path : str=os.path.join('artifacts','test.csv')
-    raw_data_path: str=os.path.join('artifacts','raw.csv')
+    cur_direct = os.getcwd()
+    train_data_path: str=os.path.join(cur_direct,'artifacts','train.csv')
+    test_data_path : str=os.path.join(cur_direct,'artifacts','test.csv')
+    raw_data_path: str=os.path.join(cur_direct,'artifacts','raw.csv')
 
 class DataIngestion:
     def __init__(self):
@@ -24,7 +25,20 @@ class DataIngestion:
             df=pd.read_csv('notebook\data\stud.csv')
             logging.info("Read the dataset as dataframe")
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
-        except:
-            pass
 
-    
+            df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
+            logging.info(f"Raw data file had been created")
+
+            train_set,test_set = train_test_split(df,test_size=0.2,random_state=42)
+            logging.info("Raw data had been splited")
+
+            train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
+            logging.info("Train data had been created")
+            test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
+            logging.info("Test data had been created")
+        except Exception as e:
+            logging.info(f"Exception has occurred,{e}")
+
+if __name__=="__main__":    
+    obj = DataIngestion()
+    obj.initiate_data_ingestion()

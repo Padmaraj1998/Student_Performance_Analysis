@@ -1,0 +1,6 @@
+[2024-07-07 12:00:00,228] 23 root - INFO - Entered the data ingestion method or component
+[2024-07-07 12:00:00,350] 26 root - INFO - Read the dataset as dataframe
+[2024-07-07 12:00:00,407] 30 root - INFO - Raw data file had been created,F:\python\student_performance_analysis\artifacts\raw.csv
+[2024-07-07 12:00:00,472] 33 root - INFO - Raw data had been splited
+[2024-07-07 12:00:00,498] 36 root - INFO - Train data had been created
+[2024-07-07 12:00:00,514] 38 root - INFO - Test data had been created

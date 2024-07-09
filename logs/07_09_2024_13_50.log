@@ -1,0 +1,16 @@
+[2024-07-09 13:50:44,195] 20 root - INFO - pickle file location -  F:\python\student_performance_analysis\artifacts\preprocessor.pkl
+[2024-07-09 13:50:44,197] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-09 13:50:44,314] 29 root - INFO - Read the dataset as dataframe
+[2024-07-09 13:50:44,373] 33 root - INFO - Raw data file had been created
+[2024-07-09 13:50:44,473] 36 root - INFO - Raw data had been splited
+[2024-07-09 13:50:44,484] 39 root - INFO - Train data had been created
+[2024-07-09 13:50:44,488] 41 root - INFO - Test data had been created
+[2024-07-09 13:50:44,497] 68 root - INFO - Train and Test data had been read
+[2024-07-09 13:50:44,497] 69 root - INFO - Obtaining preprocessor object
+[2024-07-09 13:50:44,498] 28 root - INFO - Entered get_data_transformation_object function in the class
+[2024-07-09 13:50:44,498] 40 root - INFO - Numerical columns encoding completed
+[2024-07-09 13:50:44,498] 50 root - INFO - Catagorical columns Encoding completed
+[2024-07-09 13:50:44,510] 82 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[2024-07-09 13:50:44,563] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [15] error message [makedirs() got an unexpected keyword argument 'exist_o']
+[2024-07-09 13:50:44,571] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [15] error message [makedirs() got an unexpected keyword argument 'exist_o']
+[2024-07-09 13:50:44,577] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\component\data_transformation.py] line number [91] error message [Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [15] error message [makedirs() got an unexpected keyword argument 'exist_o']]

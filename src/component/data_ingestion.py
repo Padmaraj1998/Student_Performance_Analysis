@@ -8,6 +8,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
+from src.component.data_transformation import DataTransformation
+from src.component.data_transformation import DataTransformationconfig
+
 @dataclass
 class DataIngestionConfig:
     cur_direct = os.getcwd()
@@ -36,9 +39,14 @@ class DataIngestion:
             logging.info("Train data had been created")
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
             logging.info("Test data had been created")
+
+            return (self.ingestion_config.train_data_path,self.ingestion_config.test_data_path)
+ 
         except Exception as e:
             logging.info(f"Exception has occurred,{e}")
 
 if __name__=="__main__":    
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data,test_data = obj.initiate_data_ingestion()
+    data_transformation = DataTransformation()
+    transformed_train_data, transformed_test_data, preprocessor_obj_file = data_transformation.initiate_data_transformation(train_data,test_data)

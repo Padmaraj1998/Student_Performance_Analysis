@@ -1,0 +1,19 @@
+[2024-07-29 13:54:21,687] 20 root - INFO - pickle file location -  F:\python\student_performance_analysis\artifacts\preprocessor.pkl
+[2024-07-29 13:54:24,032] 28 root - INFO - Entered the data ingestion method or component
+[2024-07-29 13:54:24,140] 31 root - INFO - Read the dataset as dataframe
+[2024-07-29 13:54:24,320] 35 root - INFO - Raw data file had been created
+[2024-07-29 13:54:24,408] 38 root - INFO - Raw data had been splited
+[2024-07-29 13:54:24,436] 41 root - INFO - Train data had been created
+[2024-07-29 13:54:24,439] 43 root - INFO - Test data had been created
+[2024-07-29 13:54:24,447] 68 root - INFO - Train and Test data had been read
+[2024-07-29 13:54:24,448] 69 root - INFO - Obtaining preprocessor object
+[2024-07-29 13:54:24,449] 28 root - INFO - Entered get_data_transformation_object function in the class
+[2024-07-29 13:54:24,449] 40 root - INFO - Numerical columns encoding completed
+[2024-07-29 13:54:24,449] 50 root - INFO - Catagorical columns Encoding completed
+[2024-07-29 13:54:24,453] 82 root - INFO - Applying preprocessing object on training dataframe and testing dataframe
+[2024-07-29 13:54:24,536] 96 root - INFO - Saved preprocessing object
+[2024-07-29 13:54:24,537] 37 root - INFO - Spliting training and testing data 
+[2024-07-29 13:54:24,561] 93 root - INFO - Evaluation model started
+[2024-07-29 13:57:25,000] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [33] error message ['squared_error']
+[2024-07-29 13:57:25,123] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [33] error message ['squared_error']
+[2024-07-29 13:57:25,139] 18 root - INFO - ExceptionError - Error occured in python script name [f:\python\student_performance_analysis\src\component\model_trainer.py] line number [94] error message [Error occured in python script name [f:\python\student_performance_analysis\src\utils.py] line number [33] error message ['squared_error']]

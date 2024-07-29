@@ -1,0 +1,16 @@
+[2024-07-29 17:26:16,664] 97 werkzeug - WARNING -  * Debugger is active!
+[2024-07-29 17:26:17,114] 97 werkzeug - INFO -  * Debugger PIN: 232-273-788
+[2024-07-29 17:26:17,660] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:26:17] "GET / HTTP/1.1" 200 -
+[2024-07-29 17:26:18,809] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:26:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-07-29 17:26:34,345] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:26:34] "[33mGET /prediction HTTP/1.1[0m" 404 -
+[2024-07-29 17:26:47,668] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:26:47] "GET /predictdata HTTP/1.1" 200 -
+[2024-07-29 17:26:56,040] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:26:56] "GET /predictdata HTTP/1.1" 200 -
+[2024-07-29 17:28:00,752] 18 root - INFO - ExceptionError - Error occured in python script name [F:\python\student_performance_analysis\src\utils.py] line number [53] error message [[Errno 2] No such file or directory: 'F:\\python\\student_performance_analysis\\artifacts\\model.pkl']
+[2024-07-29 17:28:00,753] 18 root - INFO - ExceptionError - Error occured in python script name [F:\python\student_performance_analysis\src\utils.py] line number [53] error message [[Errno 2] No such file or directory: 'F:\\python\\student_performance_analysis\\artifacts\\model.pkl']
+[2024-07-29 17:28:00,753] 18 root - INFO - ExceptionError - Error occured in python script name [F:\python\student_performance_analysis\src\pipeline\predict_pipeline.py] line number [18] error message [Error occured in python script name [F:\python\student_performance_analysis\src\utils.py] line number [53] error message [[Errno 2] No such file or directory: 'F:\\python\\student_performance_analysis\\artifacts\\model.pkl']]
+[2024-07-29 17:28:00,877] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:28:00] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2024-07-29 17:28:02,291] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:28:02] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-07-29 17:28:02,294] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:28:02] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-07-29 17:28:02,513] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:28:02] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-07-29 17:28:02,603] 97 werkzeug - INFO - 127.0.0.1 - - [29/Jul/2024 17:28:02] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-07-29 17:29:32,572] 97 werkzeug - INFO -  * Detected change in 'f:\\python\\student_performance_analysis\\src\\pipeline\\predict_pipeline.py', reloading

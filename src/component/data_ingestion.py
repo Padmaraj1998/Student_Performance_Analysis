@@ -11,6 +11,8 @@ from dataclasses import dataclass
 from src.component.data_transformation import DataTransformation
 from src.component.data_transformation import DataTransformationconfig
 
+from src.component.model_trainer import ModelTrainer
+
 @dataclass
 class DataIngestionConfig:
     cur_direct = os.getcwd()
@@ -50,3 +52,8 @@ if __name__=="__main__":
     train_data,test_data = obj.initiate_data_ingestion()
     data_transformation = DataTransformation()
     transformed_train_data, transformed_test_data, preprocessor_obj_file = data_transformation.initiate_data_transformation(train_data,test_data)
+
+    modeltrainer = ModelTrainer()
+    best_model_score = modeltrainer.initiate_model_trainer(transformed_train_data, transformed_test_data)
+    print(best_model_score)
+    
